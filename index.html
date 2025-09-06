@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Movie Gallery</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="movie-gallery.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      
+      <a-entity light="type: ambient; color: #FFF; intensity: 0.7"></a-entity>
+      <a-entity light="type: directional; color: #FFF; intensity: 0.5" position="-1 1 1"></a-entity>
+
+      <a-plane position="0 0 0" rotation="-90 0 0" width="10" height="10" color="SlateGrey"></a-plane> 
+      <a-box position="-5 2.5 0" width="0.1" height="5" depth="10" color="#DB7093"></a-box>
+      <a-box position="5 2.5 0" width="0.1" height="5" depth="10" color="#DB7093"></a-box>
+      <a-plane position="0 5 0" rotation="90 0 0" width="10" height="10" color="#FFC0CB"></a-plane>
+
+      <a-plane position="0 2.5 -5" width="10" height="5" src="./assets/wallpaper.jpg"></a-plane>
+
+      <a-box position="0 2.5 5" width="10" height="5" depth="0.1" color="#DB7093"></a-box>
+      
+      <a-plane id="beforesunrise" class="clickable" 
+               poster-handler="title:Before Sunrise; genre:Rom/Com; year:1995; 
+                             synopsis:Two strangers meet on a train in Europe and wind up spending one evening together in Vienna.  An American student, Jesse, and a French student, Celine, disembark at the Austrian capital and decide to explore the city before Jesse has to catch his flight home the next morning.  As they wander the streets of Vienna, they share their thoughts on life, love, and dreams, forming a deep connection that transcends their brief encounter.;
+                             cast:Ethan Hawke, Julie Delpy, Ving Rhames"
+               position="-3 2.5 4.9" rotation="0 180 0" width="2" height="3"
+               src="./assets/beforesunrise.jpeg"></a-plane>
+
+      <a-plane id="nottinghill" class="clickable" 
+               poster-handler="title: Notting Hill; genre:Rom/Com; year:1999; 
+                             synopsis: William Thacker is a London bookstore owner whose humdrum existence is thrown into romantic turmoil when famous American actress Anna Scott appears in his shop. A chance encounter over spilled orange juice leads to a kiss that blossoms into a full-blown affair. As the average bloke and glamorous movie star draw closer and closer together, they struggle to reconcile their radically different lifestyles in the name of love.;
+                             cast: Hugh Grant, Julia Roberts"
+               position="0 2.5 4.9" rotation="0 180 0" width="2" height="3"
+               src="./assets/nottinghill.jpg"></a-plane>
+
+      <a-plane id="runaway-bride" class="clickable" 
+               poster-handler="title: Runaway Bride; genre: Rom/Com ; year:1999; 
+                            synopsis: Having already left three grooms at the altar, Maggie Carpenter is branded 'the runaway bride' by jaded city journalist Ike Graham. But, after his facts are called into question, Ike races to Maggie's hometown to save his reputation and report on her upcoming fourth trip down the aisle -- during which he's convinced she'll run again. Though he's there on a muckraking mission, Ike can't help but fall for this breathtaking heartbreaker.;
+                             cast: Julia Roberts, Richard Gere"
+               position="3 2.5 4.9" rotation="0 180 0" width="2" height="3"
+               src="./assets/runawayBride.jpg"></a-plane>
+
+      <a-plane id="midnight-in-paris" class="clickable" 
+               poster-handler="title:Midnigh in Pris; genre: Rom/Com; year:2011;
+                             synopsis: Gil Pender is a screenwriter and aspiring novelist. Vacationing in Paris with his fiancee , he has taken to touring the city alone. On one such late-night excursion, Gil encounters a group of strange -- yet familiar -- revelers, who sweep him along, apparently back in time, for a night with some of the Jazz Age's icons of art and literature. The more time Gil spends with these cultural heroes of the past, the more dissatisfied he becomes with the present.;
+                             cast: Owen Wilson, Rachel McAdams, Marion Cotillard"
+               position="-4.9 2.5 -3" rotation="0 90 0" width="2" height="3"
+               src="./assets/midnightInParis.jpg"></a-plane>
+
+      <a-plane id="how-to" class="clickable" 
+               poster-handler="title:How to Lose a Guy in 10 Days; genre: Rom/Com; year:2003;
+                             synopsis: An advice columnist, Andie Anderson, tries pushing the boundaries of what she can write about in her new piece about how to get a man to leave you in 10 days. Her editor, Lana , loves it, and Andie goes off to find a man she can use for the experiment. Enter executive Ben Berry, who is so confident in his romantic prowess that he thinks he can make any woman fall in love with him in 10 days. When Andie and Ben meet, their plans backfire.;
+                             cast: Kate Hudson, Matthew McConaughey"
+               position="-4.9 2.5 0" rotation="0 90 0" width="2" height="3"
+               src="./assets/howTo.jpg"></a-plane>
+
+      <a-plane id="pandp" class="clickable" 
+               poster-handler="Pride and Prejudice; genre: Rom/Com; year:2005;
+                             synopsis: Sparks fly when spirited Elizabeth Bennet meets single, rich, and proud Mr. Darcy. But Mr. Darcy reluctantly finds himself falling in love with;
+                             cast: Keira Knightley, Matthew Macfadyen"
+               position="-4.9 2.5 3" rotation="0 90 0" width="2" height="3"
+               src="./assets/PandP.jpg"></a-plane>
+
+      <a-plane id="notebook" class="clickable" 
+               poster-handler="title: The Notebook; genre:Rom/Com; year:2004;
+                             synopsis:A man with a faded, well-worn notebook open in his lap. A woman experiencing a morning ritual she doesn’t understand. Until he begins to read to her.  The Notebook is an achingly tender story about the enduring power of love, a story of miracles that will stay with you forever. Like a puzzle within a puzzle, the story of Noah and Allie is just beginning. As it unfolds, their tale miraculously becomes something different, with much higher stakes. The result is a deeply moving portrait of love itself, the tender moments, and fundamental changes that affect us all.;
+                             cast:Rachel McAdams and Ryan Gosling"
+               position="4.9 2.5 -3" rotation="0 -90 0" width="2" height="3"
+               src="./assets/NOTEBOOK.jpg"></a-plane>
+
+      <a-plane id="devil" class="clickable" 
+               poster-handler="title: The Devil Wears Prada; genre: Com/Drama; year:2006;
+                             synopsis: A smart but sensible new graduate lands a job as an assistant to Miranda Priestly, the demanding editor-in-chief of a high fashion magazine. The job is far from glamorous, and Andy soon finds herself struggling to keep up with the fast-paced world of fashion while trying to maintain her own identity and values. As she navigates the challenges of her job, Andy learns valuable lessons about ambition, self-worth, and the importance of staying true to oneself.;
+                             cast: Meryl Streep, Anne Hathaway, Emily Blunt"
+               position="4.9 2.5 0" rotation="0 -90 0" width="2" height="3"
+               src="./assets/devil.jpg"></a-plane>
+
+      <a-plane id="father" class="clickable" 
+               poster-handler="title:Father of the Bride; genre:Comedy/Family; year:1991;
+                             synopsis: A father has a hard time accepting his daughter's upcoming wedding and the changes it will bring to their close-knit family. George Banks is a loving and protective father who is devastated when his daughter, Annie, announces her engagement to Bryan. As the wedding preparations begin, George finds himself struggling to let go and accept the changes that come with his daughter's new chapter in life. Through a series of comedic and heartfelt moments, George learns to embrace the joys of fatherhood and the importance of family bonds.;
+                             cast: Steve Martin, Diane Keaton, Kimberly Williams-Paisley"
+               position="4.9 2.5 3" rotation="0 -90 0" width="2" height="3"
+               src="./assets/father.jpg"></a-plane>
+
+      <a-entity camera look-controls position="0 1.6 0">
+        <a-cursor raycaster="objects: .clickable" color="#fff"></a-cursor>
+
+        <a-entity id="info-card" movie-info-card visible="false" position="0 0.0 -1.5"></a-entity>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
